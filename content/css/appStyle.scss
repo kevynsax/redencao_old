@@ -5,11 +5,15 @@ html, body {
   .whatsapp {
     cursor: pointer;
     position: fixed;
-    bottom: 24px;
-    right: 24px;
-    padding: 24px;
+    bottom: 16px;
+    right: 16px;
+    padding: 16px;
     background-color: #ece5dd;
     border-radius: 50%;
+
+    @media screen and (max-width: 600px) {
+      padding: 0;
+    }
   }
 
   .navbar {

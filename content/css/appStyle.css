@@ -1,20 +1,29 @@
 html, body {
-  height: 100%; }
-
+  height: 100%;
+}
+html .whatsapp, body .whatsapp {
+  cursor: pointer;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  padding: 24px;
+  background-color: #ece5dd;
+  border-radius: 50%;
+}
 html .navbar .navbar-toggler, body .navbar .navbar-toggler {
-  border: none; }
-
+  border: none;
+}
 html .navbar .navbar-brand img, body .navbar .navbar-brand img {
   height: 44px;
-  padding: 4px; }
-
+  padding: 4px;
+}
 html .navbar .navbar-nav .nav-item.active .nav-link, body .navbar .navbar-nav .nav-item.active .nav-link {
-  color: #003E19; }
-
+  color: #003E19;
+}
 html .navbar .navbar-nav .nav-item .nav-link, body .navbar .navbar-nav .nav-item .nav-link {
   padding: 8px 24px;
-  font-weight: 500; }
-
+  font-weight: 500;
+}
 html .cover, body .cover {
   margin: 0;
   margin-top: 70px;
@@ -23,11 +32,11 @@ html .cover, body .cover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
-
+  align-items: center;
+}
 html .cover::before, body .cover::before {
   content: "";
-  background-image: url("../img/imgCapa.JPG");
+  background-image: url('../img/imgCapa.JPG');
   position: absolute;
   top: 0;
   left: 0;
@@ -35,139 +44,146 @@ html .cover::before, body .cover::before {
   height: 100%;
   background-size: cover;
   filter: brightness(0.2) grayscale(1);
-  z-index: 0; }
-
-html .cover a, html .cover h1, html .cover img, body .cover a, body .cover h1, body .cover img {
-  z-index: 1; }
-
+  z-index: 0;
+}
+html .cover a, body .cover a, html .cover h1, body .cover h1, html .cover img, body .cover img {
+  z-index: 1;
+}
 html .cover h1, body .cover h1 {
   color: #00f963;
   font-family: 'Roboto', sans-serif;
   margin: 32px 0;
-  text-align: center; }
-
+  text-align: center;
+}
 html .cover a, body .cover a {
   color: #003d18;
-  font-weight: 500; }
-
+  font-weight: 500;
+}
 html .cover img, body .cover img {
   filter: invert(1);
-  width: 30vw; }
-
+  width: 30vw;
+}
 @media screen and (max-width: 600px) {
   html .cover img, body .cover img {
-    width: 90vw; } }
-
+    width: 90vw;
+  }
+}
 html .video, body .video {
   background: #ccc;
   padding: 40px;
-  text-align: center; }
-
+  text-align: center;
+}
 html .video video, body .video video {
-  width: 50vw; }
-
+  width: 50vw;
+}
 @media screen and (max-width: 600px) {
   html .video, body .video {
-    padding: 16px; }
+    padding: 16px;
+  }
   html .video video, body .video video {
-    width: 90vw; } }
-
-html .projeto, html .proposito, html .estrategia, html .inscricao, html .faleConosco, body .projeto, body .proposito, body .estrategia, body .inscricao, body .faleConosco {
-  padding: 40px; }
-
-html .projeto h2, html .projeto p, html .projeto span, html .proposito h2, html .proposito p, html .proposito span, html .estrategia h2, html .estrategia p, html .estrategia span, html .inscricao h2, html .inscricao p, html .inscricao span, html .faleConosco h2, html .faleConosco p, html .faleConosco span, body .projeto h2, body .projeto p, body .projeto span, body .proposito h2, body .proposito p, body .proposito span, body .estrategia h2, body .estrategia p, body .estrategia span, body .inscricao h2, body .inscricao p, body .inscricao span, body .faleConosco h2, body .faleConosco p, body .faleConosco span {
+    width: 90vw;
+  }
+}
+html .projeto, body .projeto, html .proposito, body .proposito, html .estrategia, body .estrategia, html .inscricao, body .inscricao, html .faleConosco, body .faleConosco {
+  padding: 40px;
+}
+html .projeto h2, body .projeto h2, html .proposito h2, body .proposito h2, html .estrategia h2, body .estrategia h2, html .inscricao h2, body .inscricao h2, html .faleConosco h2, body .faleConosco h2, html .projeto p, body .projeto p, html .proposito p, body .proposito p, html .estrategia p, body .estrategia p, html .inscricao p, body .inscricao p, html .faleConosco p, body .faleConosco p, html .projeto span, body .projeto span, html .proposito span, body .proposito span, html .estrategia span, body .estrategia span, html .inscricao span, body .inscricao span, html .faleConosco span, body .faleConosco span {
   text-align: center;
-  margin-bottom: 60px; }
-
+  margin-bottom: 60px;
+}
 html .proposito, body .proposito {
   background: #222;
-  color: white; }
-
+  color: white;
+}
 html #galeria img, body #galeria img {
   height: calc(80vh - 70px);
-  object-fit: cover; }
-
+  object-fit: cover;
+}
 html .inscricao, body .inscricao {
   display: flex;
   flex-direction: column;
-  justify-content: center; }
-
+  justify-content: center;
+}
 html .inscricao .btn, body .inscricao .btn {
-  color: white; }
-
+  color: white;
+}
 html .faleConosco, body .faleConosco {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  background: #999; }
-
+  background: #999;
+}
 html .faleConosco h2, body .faleConosco h2 {
   width: 100%;
-  font-size: 2.4rem; }
-
+  font-size: 2.4rem;
+}
 html .faleConosco > *:not(h2), body .faleConosco > *:not(h2) {
-  width: 50%; }
-
+  width: 50%;
+}
 @media screen and (max-width: 600px) {
   html .faleConosco > *:not(h2), body .faleConosco > *:not(h2) {
-    width: 100%; } }
-
+    width: 100%;
+  }
+}
 html .faleConosco .info, body .faleConosco .info {
   display: flex;
   justify-content: center;
-  text-align: center; }
-
+  text-align: center;
+}
 html .faleConosco .info ul, body .faleConosco .info ul {
-  padding-left: 0; }
-
+  padding-left: 0;
+}
 html .faleConosco .info ul li, body .faleConosco .info ul li {
   display: block;
-  margin-bottom: 24px; }
-
+  margin-bottom: 24px;
+}
 html .faleConosco .info ul li > *:first-child, body .faleConosco .info ul li > *:first-child {
   font-weight: 700;
   font-size: 22px;
   display: block;
-  margin-bottom: 0; }
-
+  margin-bottom: 0;
+}
 html .faleConosco .info ul li:last-child, body .faleConosco .info ul li:last-child {
   font-weight: 600;
   font-size: 20px;
   display: block;
-  margin-bottom: 0; }
-
+  margin-bottom: 0;
+}
 html .faleConosco .form .form-group div, body .faleConosco .form .form-group div {
-  margin: 4px 0; }
-
+  margin: 4px 0;
+}
 html .faleConosco .form .form-group div label, body .faleConosco .form .form-group div label {
-  font-weight: 600; }
-
+  font-weight: 600;
+}
 html .faleConosco .form .form-group div span, body .faleConosco .form .form-group div span {
-  display: none; }
-
+  display: none;
+}
 html .faleConosco .form .form-group div .withError + span, body .faleConosco .form .form-group div .withError + span {
   display: unset;
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: 600;
   color: darkred;
-  padding-left: 2px; }
-
+  padding-left: 2px;
+}
 html .faleConosco .form .form-group div input.withError, body .faleConosco .form .form-group div input.withError {
   border: 1px solid darkred;
   color: darkred;
-  outline: darkred; }
-
+  outline: darkred;
+}
 html .faleConosco .form .form-group div:last-child, body .faleConosco .form .form-group div:last-child {
-  margin-top: 16px; }
-
+  margin-top: 16px;
+}
 html .faleConosco .form .form-group div:last-child .btn, body .faleConosco .form .form-group div:last-child .btn {
-  padding: 6px 24px; }
-
+  padding: 6px 24px;
+}
 @media screen and (max-width: 600px) {
   html .faleConosco .form .form-group div:last-child, body .faleConosco .form .form-group div:last-child {
-    text-align: center; }
+    text-align: center;
+  }
   html .faleConosco .form .form-group div:last-child .btn, body .faleConosco .form .form-group div:last-child .btn {
-    padding: 6px 48px; } }
-
+    padding: 6px 48px;
+  }
+}
 .hide {
-  display: none; }
+  display: none;
+}
